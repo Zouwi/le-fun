@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TD4 - a-frame</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+</head>
+
+<body>
+    <audio class="musicos" src="https://youtu.be/YRvOePz2OqQ"></audio>
+    <script>
+        AFRAME.registerComponent('modify-materials', {
+            init: function () {
+                // Wait for model to load.
+                this.el.addEventListener('model-loaded', () => {
+                    // Grab the mesh / scene.
+                    const obj = this.el.getObject3D('mesh');
+                    // Go over the submeshes and modify materials we want.
+                    obj.traverse(node => {
+                        if (node.name.indexOf('ship') !== -1) {
+                            node.material.color.set('red');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+
+
+    <a-scene background="color: #ECECEC">
+        <a-assets>
+            <a-asset-item id="cityModel" src="whimsicott_pokemon/scene.gltf"></a-asset-item>
+        </a-assets>
+        <a-entity gltf-model="whimsicott_pokemon/scene.gltf" modify-materials="" scale="0.25 0.25 0.25"
+            animation__tutu="dir: alternate; dur: 600; easing: linear; from: 0 0 30; loop: true; property: rotation; to: 0 0 -30"></a-entity>
+        <a-entity gltf-model="maxwell/scene.gltf" modify-materials="" scale="0.25 0.25 0.25" rotation="0 10000 0"
+            position="11.22521 0.51296 -0.72911"
+            animation__maxwell="dir: alternate; dur: 600; easing: linear; from: 30 0 1; loop: true; property: rotation; to: -30 0 1"
+            r="24.27611820885722 0 0 " ro="22.23523744628904 0 0 " rot="27.616516369779234 0 0 "
+            rota="27.921688767102346 0 0 " rotat="28.520223836991402 0 0 " rotati="28.236891408727814 0 0 "
+            rotatio="28.794791494566923 0 0 "></a-entity>
+        <!-- <a-entity gltf-model="#cityModel" modify-materials></a-entity> -->
+        <a-entity camera="" position="2.73623 2.44713 9.27383" wasd-controls="" rotation="86.791 -386.747 0"
+            look-controls="" aframe-injected="" data-aframe-inspector-original-camera=""></a-entity>
+    </a-scene>
+    <!-- <a-scene>
+        <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+        <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+        <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" material="color: #9d5cff" geometry=""
+            animation__lepurple="easing: linear; loop: 1; property: position; to: 2 3 4"></a-cylinder>
+        <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+        <a-sky color="#ECECEC"></a-sky>
+    </a-scene> -->
+    <script src="js.js"></script>
+</body>
+
+</html>

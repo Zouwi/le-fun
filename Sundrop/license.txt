@@ -1,0 +1,11 @@
+Model Information:
+* title:	FNAF Security Breach | Sun All animations
+* source:	https://sketchfab.com/3d-models/fnaf-security-breach-sun-all-animations-a7cf3abb5ac94324bb88dd07a6d78f83
+* author:	morsita (https://sketchfab.com/morsita)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "FNAF Security Breach | Sun All animations" (https://sketchfab.com/3d-models/fnaf-security-breach-sun-all-animations-a7cf3abb5ac94324bb88dd07a6d78f83) by morsita (https://sketchfab.com/morsita) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

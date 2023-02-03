@@ -8,4 +8,8 @@
 
 document.querySelector(".musicos").autoplay;
 
+function bouge() {
+    document.querySelector(".sun").setAttribute("position", "0 -6 10");
+    document.querySelector(".sun").setAttribute("animation-mixer", "");
+}
 

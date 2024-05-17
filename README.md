@@ -1,3 +1,3 @@
 # le-fun
 
-CHICHA BAR CHICHA BAR TUTUUTUTUUTUTTUTUTTTUTUT
+Le fun c'est fun
